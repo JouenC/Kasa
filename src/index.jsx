@@ -1,22 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { createGlobalStyle } from 'styled-components'
-import Header from './components/Header'
+import Header from './components/Header/Header'
 import Home from './pages/Home'
-import FicheLogement from './pages/FicheLogement'
-import APropos from './pages/APropos'
-import Footer from './pages/Footer'
-import Error from './components/Error'
-
-const GlobalStyle = createGlobalStyle `
-  * {
-      font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    }
-  body {
-    margin: 0;
-  }
-`
+import FicheLogement from './pages/FicheLogement.jsx'
+import APropos from './pages/APropos.jsx'
+import Footer from './components/Footer/Footer'
+import Error from './components/Error/Error.jsx'
+import GlobalStyle from './utils/style/GlobalStyle'
 
 ReactDOM.render(
   <React.StrictMode>
