@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+
+	&__logo {
+		margin: 1% 0 0 1%;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+
+		&__accueil,  &__apropos {
+			@include header-link
+		}
+	}
+}
