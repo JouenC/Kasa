@@ -1,0 +1,28 @@
+.footer {
+    background-color: $footer-color;
+    width: 100%;
+    height: 177px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    &__logo {
+        margin: 1% 1% 1% 1%;
+        height: 39.4px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text {
+        color: $footer-text;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        font-size: 24px;
+
+        @media screen and (max-width: map-get($breakpoints, mobile ))
+        {font-size: 12px;
+        }
+    }
+}
