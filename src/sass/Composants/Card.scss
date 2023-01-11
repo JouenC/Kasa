@@ -1,0 +1,33 @@
+.cardBody {
+   display: flex; 
+   justify-content: center;
+   min-width: 95%;
+}
+
+.container {
+    background-color: blue;
+    border: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+
+
+    &__card {
+        padding: 2px 16px;
+        max-width: 340px;
+        max-height: 340px;
+
+        &__img {
+
+            &:hover {
+                height: 90%;
+            }
+
+        }
+
+        &__title {
+            color: red;
+        }
+    }
+}

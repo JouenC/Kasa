@@ -21,7 +21,6 @@ function App () {
             <Route path='/pages/FicheLogement/:LogementId' element={<FicheLogement />} />
             <Route path='*' element={<Error />} />
           </Routes>
-        Hello World
         <Footer />
       </div>
     </Router>
