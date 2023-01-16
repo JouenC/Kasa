@@ -17,8 +17,8 @@ function App () {
         <Header />
           <Routes>
             <Route index element={<Home />} />
-            <Route path='/pages/APropos' element={<APropos />} />
-            <Route path='/pages/FicheLogement/:LogementId' element={<FicheLogement />} />
+            <Route path='/pages/apropos' element={<APropos />} />
+            <Route path='/fichelogement/:id' element={<FicheLogement />} />
             <Route path='*' element={<Error />} />
           </Routes>
         <Footer />

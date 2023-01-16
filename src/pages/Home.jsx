@@ -1,19 +1,28 @@
-import landscape from "../assets/MaskGroup.svg"
+import React from "react";
+import { Link } from "react-router-dom";
+// import landscape from "../assets/MaskGroup.svg"
 import Card from "../components/Card/Card"
+import leases from "../data/logements.json"
+import Banner from "../components/Banner/Banner"
+import Text from "../data/text.json"
 
 function Home () {
 	return (
 		<div>
-			<div className="home">
-				<img src={landscape} alt="paysage de mer"  className="home__landscape" />
-				<div className="home__slogan">
-					Chez vous, partout et ailleurs
-				</div>
-				
+			<div className="banner">
+				<Banner slogan={Text.slogan}/>
 			</div>
-			<div>
-				<Card/>
-			</div>
+			<section className="cardBody">
+        		{leases.map((lease) => {
+          			return (
+            			<article key={lease.id} className="container">
+              				<Link to={`/FicheLogement/${lease.id}`}>
+                			<Card image={lease.cover} title={lease.title} />
+              				</Link>
+            			</article>
+          			)
+        		})}
+      		</section>
 		</div>
 	)
 }
