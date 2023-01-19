@@ -11,11 +11,3 @@ function Banner ({slogan}) {
 }
 
 export default Banner
-
-// {/* <div className="home">
-// 				{/* <img src={landscape} alt="paysage de mer"  className="home__landscape" /> */}
-// 				<h1 className="home__slogan">
-// 					Chez vous, partout et ailleurs
-// 				</h1>
-				
-// 			</div> */}
