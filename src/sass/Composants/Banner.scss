@@ -1,9 +1,16 @@
 .home {
     display: flex;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
     background: url("../../assets/MaskGroup.svg") no-repeat;
-    padding: 50px 375px 92px 375px;
+    // padding: 50px 375px 92px 375px;
+    height: 100%;
+    width: 1242px;
+    border-radius: 20px;
+
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        width: 550px;
+    }
 
     &__slogan {
         // position: absolute;
