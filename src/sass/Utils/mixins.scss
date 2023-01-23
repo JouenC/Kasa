@@ -3,9 +3,11 @@
     text-decoration: none;
     color: $primary-color;
     margin-right: 20px;
+
         &:hover {
             text-decoration: underline;
         }
+        
     @media screen and (max-width: map-get($breakpoints, mobile ))
         {text-transform: uppercase
         }

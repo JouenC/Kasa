@@ -1,6 +1,21 @@
+import text from "../data/text.json"
+import { Link } from "react-router-dom";
+
 function Error () {
     return (
-        <div>Error</div>
+        <div className="false">
+            <div className="false__error">
+                {text.error}
+            </div>
+            <div className="false__oups">
+                {text.oups}
+            </div>  
+            <div className="false__link">
+                <Link to={`/`}>
+                    {text.badDirection}			
+                </Link>   
+            </div>
+        </div>
     )
 }
 

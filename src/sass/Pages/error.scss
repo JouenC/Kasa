@@ -1,0 +1,35 @@
+.false {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+
+    &__error {
+        color: $primary-color;
+        font-size: 288px;
+        font-weight: bold;
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            font-size: 96px;
+        }
+    }
+
+    &__oups {
+        color: $primary-color;
+        font-size: 36px;
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            font-size: 18px;
+        }
+    }
+
+    &__link {
+        color: $primary-color;
+        font-size: 18px;
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            font-size: 14px;
+        }
+    }
+}

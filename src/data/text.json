@@ -1,3 +1,6 @@
 {
-    "slogan": "Chez vous, partout et ailleurs"
+    "slogan": "Chez vous, partout et ailleurs",
+    "error": "404",
+    "oups": "Oups! La page que vous demandez n'existe pas.",
+    "badDirection": "Retourner sur la page d'accueil"
 }

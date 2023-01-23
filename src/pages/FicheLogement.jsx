@@ -1,13 +1,16 @@
-// import { useParams } from "react-router-dom";
-// import loging from "../data/logements.json";
+import { useParams } from "react-router-dom";
+import logings from "../data/logements.json";
+// import Slider from "../components/Slider/Slider"
 
-function FicheLogement () {
-	// const { loging } = useParams();
-  	// const loging = products.find((loging) => loging.id === logingId);
-	return (
-		<div>FicheLogement</div>
-		
-	)
+function FicheLogement ({title, pictures}) {
+	const { logingId } = useParams();
+	const loging = logings.find((loging) => loging.id === logingId);
+		return (
+			<div>
+				<h1>{loging.title}</h1>
+				{/* <Slider slides={loging.pictures}/> */}
+			</div>
+		)
 }
 
 export default FicheLogement
