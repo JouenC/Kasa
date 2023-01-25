@@ -1,7 +1,7 @@
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 222px;
-    width: 100%;
+.home {
+    @include banner
+}
+
+.forest {
+    background: url("../../assets/Forest.svg") no-repeat;
 }

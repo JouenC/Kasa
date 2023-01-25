@@ -8,8 +8,8 @@ import Text from "../data/text.json"
 
 function Home () {
 	return (
-		<div>
-			<div className="banner">
+		<div className="home">
+			<div className="forest">
 				<Banner slogan={Text.slogan}/>
 			</div>
 			<section className="cardBody">
@@ -17,7 +17,7 @@ function Home () {
           			return (
             			<article key={lease.id} className="container">
               				<Link to={`/FicheLogement/${lease.id}`}>
-                			<Card image={lease.cover} title={lease.title} />
+                				<Card image={lease.cover} title={lease.title} />
               				</Link>
             			</article>
           			)

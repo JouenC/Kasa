@@ -1,0 +1,14 @@
+.aPropos {
+    @include banner;
+
+    &__dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 80px;
+    }
+}
+
+.mountain {
+    background: url("../../assets/Mountain.svg") no-repeat;
+}

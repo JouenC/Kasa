@@ -12,3 +12,16 @@
         {text-transform: uppercase
         }
 }
+
+@mixin banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 20px;
+
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        width: 550px;
+    }
+}

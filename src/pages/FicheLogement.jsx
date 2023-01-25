@@ -5,6 +5,7 @@ import logings from "../data/logements.json";
 function FicheLogement ({title, pictures}) {
 	const { logingId } = useParams();
 	const loging = logings.find((loging) => loging.id === logingId);
+
 		return (
 			<div>
 				<h1>{loging.title}</h1>

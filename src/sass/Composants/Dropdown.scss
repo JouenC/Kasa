@@ -1,0 +1,14 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+
+    &__button {
+        background-color: $primary-color;
+        color: $footer-text
+    }
+        
+    &__content {
+        background-color: $card-background;
+    }
+    
+}
