@@ -1,6 +1,6 @@
 import React from "react";
 import arrowTop from "../../assets/arrowTop.svg";
-import arrowBottom from "../../assets/arrowBottom.svg"
+import arrowBottom from "../../assets/arrowBottom.svg";
 
 function Dropdown ({ title, content }) {
 
@@ -11,7 +11,7 @@ function Dropdown ({ title, content }) {
 
     return (
       <article className="dropdown">
-        <button onClick={handleOpen} className= "dropdown__button"> {title} {open ? <div className="isOpen">{arrowTop}</div> : <div className="isClose">{arrowBottom}</div>} </button>
+        <button onClick={handleOpen} className= "dropdown__button"> {title} {open ? <div className="isOpen"><img src={arrowTop} alt="" /></div> : <div className="isClose"><img src={arrowBottom} alt="" /></div>} </button>
         {open ? (
             <div className="dropdown__content">
                 {content}

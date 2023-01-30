@@ -20,16 +20,25 @@
         height: 47px;
         font-size: 24px;
         width: inherit;
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            font-size: 13px;
+        }
     }
         
     &__content {
-        padding: 18px 0;
+        padding: 18px 10px;
         color: $primary-color;
         width: inherit;
         -webkit-hyphens: auto;
         hyphens: auto;
         display: flex;
         flex-wrap: wrap;
+        box-sizing: border-box;
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            font-size: 12px;
+        }
     }
     
 }

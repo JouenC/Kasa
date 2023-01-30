@@ -1,0 +1,43 @@
+.carrousel {
+    position: relative;
+    margin: 10px;
+
+    &__active {
+        height: 415px;
+        width: 100%;
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            height: 225px;
+        }
+    }
+
+    // &__inactive {
+
+    // }
+
+    &__image {
+        width: inherit;
+        height: inherit;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+
+    &__previous {
+        @include arrows;
+
+        &__asset {
+            margin-left: 10px;
+            @include arrowsSize;
+        }
+    }
+
+    &__next {
+        @include arrows;
+        right: 0;
+
+        &__asset {
+            margin-right: 10px;
+            @include arrowsSize;
+        }
+    }
+}

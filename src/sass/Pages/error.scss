@@ -5,6 +5,10 @@
     align-items: center;
     height: 800px;
 
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        height: 490px;
+    }
+
     &__error {
         color: $primary-color;
         font-size: 288px;
@@ -27,6 +31,10 @@
     &__link {
         color: $primary-color;
         font-size: 18px;
+
+        &:visited {
+            color: $primary-color !important;
+        }
 
         @media screen and (max-width: map-get($breakpoints, mobile )) {
             font-size: 14px;
