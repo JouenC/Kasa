@@ -1,0 +1,19 @@
+.title {
+    color: $primary-color;
+    font-size: 36px;
+    margin-left: 10px;
+
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        font-size: 18px;
+    }
+}
+
+.location {
+    color: $primary-color;
+    font-size: 18px;
+    margin-left: 10px;
+
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        font-size: 14px;
+    }
+}
