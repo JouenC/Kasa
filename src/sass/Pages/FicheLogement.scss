@@ -1,19 +1,33 @@
-.title {
-    color: $primary-color;
-    font-size: 36px;
-    margin-left: 10px;
+.element {
+    display: flex;
+    justify-content: space-between;
 
-    @media screen and (max-width: map-get($breakpoints, mobile )) {
+    &__title {
+        color: $primary-color;
+        font-size: 36px;
+        margin-left: 10px;
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            font-size: 18px;
+        }
+    }
+
+    &__location {
+        color: $primary-color;
         font-size: 18px;
+        margin-left: 10px;
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            font-size: 14px;
+        }
+    }
+        
+    &__tags {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
-.location {
-    color: $primary-color;
-    font-size: 18px;
-    margin-left: 10px;
-
-    @media screen and (max-width: map-get($breakpoints, mobile )) {
-        font-size: 14px;
-    }
+.dropdownLoging {
+    display: flex;
 }

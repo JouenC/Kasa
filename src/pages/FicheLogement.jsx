@@ -20,17 +20,31 @@ function FicheLogement ({title, pictures}) {
 		return (
 			<div>
 				<Carrousel images={loging.pictures} />
-				<h1 className='title'>{loging.title}</h1>
-				<h2 className='location'>{loging.location}</h2>
-				<div>
-					{loging.tags.map((tag, index) => (
-						<Tags key={index} tags={tag} />
-					))}
+				<div className='element'>
+					<div>
+						<h1 className='element__title'>
+							{loging.title}
+						</h1>
+						<h2 className='element__location'>
+							{loging.location}
+						</h2>
+						<div className='element__tags'>
+							{loging.tags.map((tag, index) => (
+								<Tags key={index} tags={tag} />
+							))}
+						</div>
+					</div>
+					<div>
+						<User host={loging.host.name} picture={loging.host.picture} />
+						<div>
+							<Rating rating={loging.rating} />
+						</div>
+					</div>
 				</div>
-				<div><User host={loging.host.name} picture={loging.host.picture} /></div>
-				<div><Rating rating={loging.rating} /></div>
-				<div><DropDown title="Description" content={loging.description} /></div>
-				<div><DropDown title="Équipements" content={loging.equipments} /></div>
+				<div className='dropdownLoging'>
+					<DropDown title="Description" content={loging.description} />
+					<DropDown title="Équipements" content={loging.equipments} />
+				</div>
 			</div>
 		)
 }

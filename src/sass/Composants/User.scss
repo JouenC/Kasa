@@ -1,0 +1,19 @@
+.user {
+    display: flex;
+    flex-direction: row;
+
+        &__host {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            flex-wrap: wrap;
+            width: 80px;
+            color: $primary-color;
+        }
+
+        &__picture {
+            border-radius: 50%;
+            height: 64px;
+            width: 64px;
+        }
+}

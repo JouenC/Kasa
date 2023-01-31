@@ -3,7 +3,7 @@ import React from "react";
 function Tag ({tags}) {
     return (
         <div className='tag'>
-            <p>{tags}</p>
+            {tags}
         </div>
         )};
 
