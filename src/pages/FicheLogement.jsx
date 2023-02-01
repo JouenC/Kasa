@@ -6,6 +6,7 @@ import logings from "../data/logements.json";
 // import Error from './pages/Error'
 import Tags from "../components/Tag/Tag";
 import DropDown from "../components/Dropdown/Dropdown";
+import DropdownLi from "../components/Dropdown/DropdownLi";
 import User from "../components/User/User";
 import Rating from "../components/Rating/Rating";
 
@@ -18,10 +19,10 @@ function FicheLogement ({title, pictures}) {
 	
 
 		return (
-			<div>
+			<div className='ficheLogement'>
 				<Carrousel images={loging.pictures} />
 				<div className='element'>
-					<div>
+					<div className='blockTitle'>
 						<h1 className='element__title'>
 							{loging.title}
 						</h1>
@@ -34,7 +35,7 @@ function FicheLogement ({title, pictures}) {
 							))}
 						</div>
 					</div>
-					<div>
+					<div className='element__user'>
 						<User host={loging.host.name} picture={loging.host.picture} />
 						<div>
 							<Rating rating={loging.rating} />
@@ -43,7 +44,7 @@ function FicheLogement ({title, pictures}) {
 				</div>
 				<div className='dropdownLoging'>
 					<DropDown title="Description" content={loging.description} />
-					<DropDown title="Équipements" content={loging.equipments} />
+					<DropdownLi title="Équipements" content={loging.equipments} />
 				</div>
 			</div>
 		)

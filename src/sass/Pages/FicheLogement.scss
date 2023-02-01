@@ -1,11 +1,22 @@
+.ficheLogement {
+    margin: 0 100px;
+
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        margin: 0 10px;
+    }
+}
+
 .element {
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        flex-direction: column;
+    }
+
     &__title {
         color: $primary-color;
         font-size: 36px;
-        margin-left: 10px;
 
         @media screen and (max-width: map-get($breakpoints, mobile )) {
             font-size: 18px;
@@ -15,7 +26,6 @@
     &__location {
         color: $primary-color;
         font-size: 18px;
-        margin-left: 10px;
 
         @media screen and (max-width: map-get($breakpoints, mobile )) {
             font-size: 14px;
@@ -24,10 +34,46 @@
         
     &__tags {
         display: flex;
+        // justify-content: space-between;
+        max-width: 640px;
+        margin: 25px 0;
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            font-size: 10px;
+        }
+    }
+
+    &__user {
+        display: flex;
+        flex-direction: column;
         justify-content: space-around;
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
     }
 }
 
 .dropdownLoging {
     display: flex;
+
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        flex-direction: column;
+    }
+
+    // &__equipement {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+}
+
+.blockTitle {
+    width: 70%;
+
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        width: 100%;
+    }
 }

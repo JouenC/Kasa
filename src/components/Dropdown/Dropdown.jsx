@@ -14,12 +14,14 @@ function Dropdown ({ title, content }) {
         <button onClick={handleOpen} className= "dropdown__button"> {title} {open ? <div className="isOpen"><img src={arrowTop} alt="" /></div> : <div className="isClose"><img src={arrowBottom} alt="" /></div>} </button>
         {open ? (
             <div className="dropdown__content">
-                {content}
+              {content}
             </div>
         ) : null}
         {/* {open ? <div className="isOpen">{content}</div> : null */}
       </article>
     );
+
+
     // function isCollapse (element) {
     //   element.preventDefault();
     //   const divText = element.target.nextSibling;
@@ -43,9 +45,9 @@ function Dropdown ({ title, content }) {
     //     <div className="collapse__content">
     //       {Array.isArray(content) ? (
     //         <ul className="collapse__list">
-    //           {content.map((equipment, index) => (
+    //           {content.map((content, index) => (
     //             <li key={index} className="collapse__list-element">
-    //               {equipment}
+    //               {content}
     //             </li>
     //           ))}
     //         </ul>
@@ -56,5 +58,5 @@ function Dropdown ({ title, content }) {
     //   </div>
     // );
   };
-  
-  export default Dropdown;
+
+export default Dropdown;

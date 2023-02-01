@@ -42,6 +42,7 @@ function Carrousel ({ images })  {
           <div className="carrousel__next" onClick={nextImage}>
             <img src={arrowRight} alt="" className="carrousel__next__asset" />
           </div>
+          <div className="carrousel__number">{count +1}/{length}</div>
         </>
       ) : null}
     </div>

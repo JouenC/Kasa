@@ -1,0 +1,10 @@
+.rating {
+
+    &__star {
+        margin-left: 5px;
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            width: 15px;
+        }
+    }
+}

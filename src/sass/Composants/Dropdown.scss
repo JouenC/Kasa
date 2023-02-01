@@ -35,10 +35,33 @@
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
+        font-size: 18px;
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            font-size: 12px;
+        }
+    }
+
+    &__contentLi {
+        padding: 0 10px;
+        color: $primary-color;
+        width: inherit;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+        box-sizing: border-box;
+        list-style:none;
 
         @media screen and (max-width: map-get($breakpoints, mobile )) {
             font-size: 12px;
         }
     }
     
+}
+
+.li {
+    margin-left: 60px;
+
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        margin-left: 0;
+    }
 }
