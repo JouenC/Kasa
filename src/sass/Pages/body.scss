@@ -1,5 +1,11 @@
 body {
     margin: 0%;
+    // margin: 0 100px;
     font-family: "Montserrat", "Roboto", "Serif", sans-serif;
     width: 100%;
+    font-size: $sizeLarge;
+
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        font-size: $sizeSmall;
+    }
 }

@@ -4,9 +4,15 @@
     justify-content: space-around;
     align-items: center;
     height: 800px;
+    margin: 0 $marginDespock;
+
+    @media screen and (min-width: map-get($breakpoints, mobile )) and (max-width: map-get($breakpoints, tablette)) {
+        margin: 0 $marginTablette;
+    }
 
     @media screen and (max-width: map-get($breakpoints, mobile )) {
         height: 490px;
+        margin: 0 $marginMobile;
     }
 
     &__error {
@@ -22,6 +28,7 @@
     &__oups {
         color: $primary-color;
         font-size: 36px;
+        text-align: center;
 
         @media screen and (max-width: map-get($breakpoints, mobile )) {
             font-size: 18px;
@@ -31,9 +38,10 @@
     &__link {
         color: $primary-color;
         font-size: 18px;
+        text-align: center;
 
         &:visited {
-            color: $primary-color !important;
+            color: $primary-color;
         }
 
         @media screen and (max-width: map-get($breakpoints, mobile )) {

@@ -11,7 +11,7 @@ function Dropdown ({ title, content }) {
 
     return (
       <article className="dropdown">
-        <button onClick={handleOpen} className= "dropdown__button"> {title} {open ? <div className="isOpen"><img src={arrowTop} alt="" /></div> : <div className="isClose"><img src={arrowBottom} alt="" /></div>} </button>
+        <button onClick={handleOpen} className= "dropdown__button"> {title} {open ? <div><img src={arrowTop} alt="" /></div> : <div><img src={arrowBottom} alt="" /></div>} </button>
         {open ? (
             <div className="dropdown__content">
               {content}

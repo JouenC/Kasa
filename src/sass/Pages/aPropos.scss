@@ -7,9 +7,19 @@
         align-items: center;
         margin: 20px 80px;
         width: 80%;
+
+        @media screen and (min-width: map-get($breakpoints, mobile )) and (max-width: map-get($breakpoints, tablette)) {
+            width: 90%;
+        }
+
+        @media screen and (max-width: map-get($breakpoints, mobile )) {
+            width: 100%;
+        }
     }
 }
 
 .mountain {
-    background: url("../../assets/Mountain.svg") no-repeat;
+    background: url("../../assets/Mountain.png") no-repeat;
+    width: 100%;
+    border-radius: 25px;
 }

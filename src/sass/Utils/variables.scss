@@ -3,6 +3,14 @@ $footer-color: #000000;
 $footer-text: #ffffff;
 $card-background: #f6f6f6;
 
+$sizeLarge: 24px;
+$sizeSmall: 12px;
+
+$marginDespock: 100px;
+$marginTablette: 50px;
+$marginMobile: 10px;
+
 $breakpoints: (
-    mobile: 720px
+    mobile: 799px,
+    tablette: 966px
 );

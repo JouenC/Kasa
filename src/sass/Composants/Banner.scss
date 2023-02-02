@@ -2,16 +2,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 225px;
-    width: 1242px;
+    height: 223px;
+    // width: 1242px;
     // border-radius: 20px;
 
-    // @media screen and (max-width: map-get($breakpoints, mobile )) {
-    //     width: 550px;
-    // }
+    @media screen and (min-width: map-get($breakpoints, mobile )) and (max-width: map-get($breakpoints, tablette)) {
+        height: 180px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        height: 111px;
+    }
 
     &__slogan {
         color: $footer-text;
+        font-size: 48px;
+        font-weight: normal;
+
+        @media screen and (min-width: map-get($breakpoints, mobile )) and (max-width: map-get($breakpoints, tablette)) {
+            font-size: 36px;
+        }
 
         @media screen and (max-width: map-get($breakpoints, mobile )) {
             font-size: 24px;
