@@ -1,14 +1,14 @@
 .tag {
     background-color: $primary-color;
     border-radius: 10px;
-    width: 125px;
+    width: 128px;
     height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $footer-text;
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 13px;
 
     @media screen and (min-width: map-get($breakpoints, mobile )) and (max-width: map-get($breakpoints, tablette)) {
         font-size: 12px;
@@ -17,8 +17,8 @@
     @media screen and (max-width: map-get($breakpoints, mobile )) {
         border-radius: 10px;
         height: 18px;
-        width: 84px;
+        width: 90px;
         margin-right: 5px;
-        font-size: 10px;
+        font-size: 9px;
     }
 }

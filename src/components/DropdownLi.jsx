@@ -1,6 +1,9 @@
+// react
 import React from "react";
-import arrowTop from "../../assets/arrowTop.svg";
-import arrowBottom from "../../assets/arrowBottom.svg";
+
+// asset
+import arrowTop from "../assets/arrowTop.svg";
+import arrowBottom from "../assets/arrowBottom.svg";
 
 function DropdownLi ({ title, content }) {
 
@@ -21,7 +24,6 @@ function DropdownLi ({ title, content }) {
               ))}
             </ul>
         ) : null}
-        {/* {open ? <div className="isOpen">{content}</div> : null */}
       </article>
     );
 }

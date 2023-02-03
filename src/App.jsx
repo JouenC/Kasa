@@ -1,15 +1,20 @@
-// import React from 'react';
+// react
+import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header/Header'
+
+// pages and components
 import Home from './pages/Home'
-import FicheLogement from './pages/FicheLogement.jsx'
 import APropos from './pages/APropos'
-import Footer from './components/Footer/Footer'
 import Error from './pages/Error'
+import FicheLogement from './pages/FicheLogement.jsx'
+import Header from './components/Header'
+import Footer from './components/Footer'
+
+
+// style
 import './sass/main.scss'
 
-export default App
-
+// routes
 function App () {
   return (
     <Router>
@@ -27,3 +32,5 @@ function App () {
     </Router>
   )
 }
+
+export default App

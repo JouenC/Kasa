@@ -1,11 +1,15 @@
+// react
 import React from 'react';
-import goodStar from '../../assets/goodStar.svg'
-import badStar from '../../assets/badStar.svg'
+
+// assets
+import goodStar from '../assets/goodStar.svg'
+import badStar from '../assets/badStar.svg'
 
 function rating ({ rating }) {
     const stars = [1, 2, 3, 4, 5];
   
     return (
+        // compare rating with table to display stars
         <div className="rating">
             {stars.map((star) =>
                 rating >= star ? (

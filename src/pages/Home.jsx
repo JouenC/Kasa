@@ -1,10 +1,13 @@
+// react
 import React from "react";
 import { Link } from "react-router-dom";
-// import landscape from "../assets/MaskGroup.svg"
-import Card from "../components/Card/Card"
+
+// components and data
+import Card from "../components/Card"
+import Banner from "../components/Banner"
 import leases from "../data/logements.json"
-import Banner from "../components/Banner/Banner"
 import Text from "../data/text.json"
+
 
 function Home () {
 	return (

@@ -1,5 +1,8 @@
-import text from "../data/text.json"
+// react
 import { Link } from "react-router-dom";
+
+// data
+import text from "../data/text.json"
 
 function Error () {
     return (

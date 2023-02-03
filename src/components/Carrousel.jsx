@@ -1,7 +1,10 @@
+// react
 import React from "react";
 import { useState } from "react";
-import arrowLeft from "../../assets/arrowLeft.svg";
-import arrowRight from "../../assets/arrowRight.svg";
+
+// asset
+import arrowLeft from "../assets/arrowLeft.svg";
+import arrowRight from "../assets/arrowRight.svg";
 
 function Carrousel ({ images })  {
   const [count, setCount] = useState(0);
@@ -33,7 +36,7 @@ function Carrousel ({ images })  {
           </div>
         );
       })}
-      {/* get button if there are more thant one picture */}
+      {/* add arrows and a count if there is more than one image */}
       {length > 1 ? (
         <>
           <div className="carrousel__previous" onClick={prevImage}>

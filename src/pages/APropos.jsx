@@ -1,5 +1,6 @@
-import Banner from "../components/Banner/Banner"
-import Dropdown from "../components/Dropdown/Dropdown"
+// components and data
+import Banner from "../components/Banner"
+import Dropdown from "../components/Dropdown"
 import text from "../data/text.json"
 
 function APropos () {

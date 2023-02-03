@@ -1,3 +1,4 @@
+// react
 import React from "react";
 
 function user ({host, picture}) {
@@ -6,7 +7,7 @@ function user ({host, picture}) {
             <div className="user__host">
                 {host}
             </div>
-            <img src={picture} alt="" className="user__picture"/>
+            <img src={picture} alt="portrait" className="user__picture"/>
         </div>
     )
 }

@@ -1,16 +1,19 @@
+// react
 import React from 'react'
 import { useParams } from "react-router-dom";
-import Carrousel from '../components/Carrousel/Carrousel';
-import logings from "../data/logements.json";
-import Error from '../pages/Error'
-import Tags from "../components/Tag/Tag";
-import DropDown from "../components/Dropdown/Dropdown";
-import DropdownLi from "../components/Dropdown/DropdownLi";
-import User from "../components/User/User";
-import Rating from "../components/Rating/Rating";
 
+// pages, components and data
+import Error from '../pages/Error'
+import Carrousel from '../components/Carrousel';
+import Tags from "../components/Tag";
+import DropDown from "../components/Dropdown";
+import DropdownLi from "../components/DropdownLi";
+import User from "../components/User";
+import Rating from "../components/Rating";
+import logings from "../data/logements.json";
 
 function FicheLogement ({title, pictures}) {
+	// find identical id
 	const { logingId } = useParams();
 	const loging = logings.find((loging) => loging.id === logingId);
 
@@ -46,6 +49,7 @@ function FicheLogement ({title, pictures}) {
 			</div>
 		)
 } 	else {
+		// if bad id, redirect error page
 		return (
 			<Error/>)
 }}
