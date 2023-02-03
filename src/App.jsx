@@ -25,7 +25,6 @@ function App () {
             <Route path='/pages/apropos' element={<APropos />} />
             <Route path='/fichelogement/:logingId' element={<FicheLogement />} />
             <Route path='*' element={<Error />} />
-            <Route path='/404' element={<Error />} />
           </Routes>
         <Footer />
       </div>
