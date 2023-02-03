@@ -2,22 +2,19 @@ import React from 'react'
 import { useParams } from "react-router-dom";
 import Carrousel from '../components/Carrousel/Carrousel';
 import logings from "../data/logements.json";
-// import { Redirect } from "react-router-dom";
-// import Error from './pages/Error'
+import Error from '../pages/Error'
 import Tags from "../components/Tag/Tag";
 import DropDown from "../components/Dropdown/Dropdown";
 import DropdownLi from "../components/Dropdown/DropdownLi";
 import User from "../components/User/User";
 import Rating from "../components/Rating/Rating";
 
+
 function FicheLogement ({title, pictures}) {
 	const { logingId } = useParams();
-	console.log (logingId)
 	const loging = logings.find((loging) => loging.id === logingId);
 
-	// { loging.id === !logingId ? <Redirect to={<Error />} /> : null }
-	
-
+	if (loging) {
 		return (
 			<div className='ficheLogement'>
 				<Carrousel images={loging.pictures} />
@@ -48,6 +45,9 @@ function FicheLogement ({title, pictures}) {
 				</div>
 			</div>
 		)
-}
+} 	else {
+		return (
+			<Error/>)
+}}
 
 export default FicheLogement
