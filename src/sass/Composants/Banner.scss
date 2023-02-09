@@ -3,8 +3,6 @@
     justify-content: center;
     align-items: center;
     height: 223px;
-    // width: 1242px;
-    // border-radius: 20px;
 
     @media screen and (min-width: map-get($breakpoints, mobile )) and (max-width: map-get($breakpoints, tablette)) {
         height: 180px;

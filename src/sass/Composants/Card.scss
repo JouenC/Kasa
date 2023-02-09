@@ -7,31 +7,24 @@
    margin: 50px 0;
 
    @media screen and (max-width: map-get($breakpoints, mobile ))
-        { margin: 50px 0;
+        {   margin: 20px 0;
+            background-color: white;
         }
 }
 
 .container {
-    // border-radius: 20px;
     display: flex;
-    // justify-content: center;
-    // max-width: 340px;
-    // max-height: 340px;
     margin: 28px 25px;
-    // background-color: $primary-color;
+
+    @media screen and (max-width: map-get($breakpoints, mobile )) {
+        margin: 5px 0;
+    }
 
     &__card {
-        // padding: 56px 50px;
-        // max-width: 340px;
-        // max-height: 340px;
         border-radius: 20px;
-        // display: flex;
-        // flex-wrap: wrap;
-        // width: 100%;
         width: 340px;
         height: 340px;
         position: relative;
-        // margin-bottom: 20px;
 
         @media screen and (min-width: map-get($breakpoints, mobile )) and (max-width: map-get($breakpoints, tablette)) {
             width: 335px;
@@ -39,20 +32,21 @@
         }
     
         @media screen and (max-width: map-get($breakpoints, mobile )) {
-            width: 335px;
-            height: 255px;
+            width: 100%;
+            height: 100%;
             border-radius: 10px;
         }
 
         &__img {
-            // max-width: 340px;
-            // max-height: 340px;
-            // border-radius: 20px;
             width: inherit;
             height: inherit;
-            // object-fit: cover;
             border-radius: inherit;
             object-fit: cover;
+
+            @media screen and (max-width: map-get($breakpoints, mobile )) {
+                width: 100%;
+                height: 100%;
+            }
         }
 
         &__title {
@@ -62,7 +56,6 @@
             font-weight: 500;
             margin: 15px 20px;
             color: $footer-text; 
-            // box-sizing: inherit;
         }
     }
 }
