@@ -23,7 +23,12 @@
 		align-items: center;
 
 		&__accueil,  &__apropos {
-			@include header-link
+			@include header-link;
+			text-decoration: none;
+		}
+
+		&__accueilactif, &__aproposactif {
+			@include header-link;
 		}
 	}
 }
